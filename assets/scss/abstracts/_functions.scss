@@ -1,0 +1,6 @@
+@use 'sass:math';
+
+// Calcular equivalencia de pixeles a rems
+@function rem($pixel) {
+  @return math.div($pixel, 16) + rem;
+}
