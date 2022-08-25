@@ -1,13 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/dist/styles.css">
-  <title>Document</title>
+  <meta name="description" content="Vados Grill alitas de pollo al carbón bañadas en salsas especiales que brindan un sabor único"> 
+  <meta name="keywords" content="wings, alitas, alitas bbq, alitas de pollo, alitas en querétaro">
+  <link rel="shortcut icon" href="./assets/img/icono-vados-grill.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" media="screen">
+  <link rel="stylesheet" href="./dist/styles.css" media="screen">
+  <title>Vados Grill | Alitas de pollo al carbón</title>
 </head>
 <body>
-  <h1>TESTER</h1>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark position-fixed">
+      <div class="container-fluid menu-desktop">
+        <a class="navbar-brand d-flex align-items-center me-0" href="./index.html">
+          <div class="business__logo d-flex align-items-center justify-content-center">
+            <img class="img-fluid" src="./assets/img/logotipo-vados-grill.webp" alt="Logotipo de Vados Grill" width="150" height="100">
+          </div>
+          <div class="business__data d-flex flex-column justify-content-center">
+            <h1 class="text-uppercase mb-0">Vados Grill</h1>
+            <p class="fw-bold mb-0">Alitas al carbón</p>
+          </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon position-relative"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-xl-end" id="navbarNav">
+          <ul class="navbar-nav d-lg-flex justify-content-lg-evenly justify-content-xl-around ">
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="./pages/especiales.html">Especiales</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="./pages/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="./pages/menu.html">Menú</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="./pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main d-flex align-items-center">
+    <section class="intro container text-center col-sm-8 text-lg-start">
+      <h2 class="text-uppercase">De la parrilla a tu mesa</h2>
+      <p class="fw-bold ">Sabrosas alitas de pollo al carbón, bañadas en salsas secretas que deleitarán tu paladar como nunca antes. ¿Te atreves a probar los sabores inigualables que Vados Grill tiene para ti?</p>
+      <a class="btn btn-warning text-uppercase fw-bold d-xl-block" href="./pages/especiales.html">Ver especiales</a>
+    </section>
+  </main>
+  
+  <footer>
+    <div class="container d-flex align-items-center justify-content-center">
+      <p class="mb-0 text-center">&copy; 2022 Todos los derechos reservados Vados Grill, México</p>
+    </div>
+  </footer> 
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" defer></script>
 </body>
 </html>

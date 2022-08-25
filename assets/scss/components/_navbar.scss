@@ -1,0 +1,176 @@
+@use '../abstracts/' as *;
+
+.bg-dark {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  width: 100%;
+  z-index: 999999;
+}
+
+.menu-desktop {
+  @include breakpoint(xl) {
+    width: 90%;
+  }
+
+  @include breakpoint(xxl) {
+    width: 80%;
+  }
+
+  .navbar-brand {
+    width: 70%;
+
+    @include breakpoint(sm) {
+      width: 40%;
+    }
+
+    @include breakpoint(md) {
+      width: 26%;
+    }
+
+    @include breakpoint(xl) {
+      width: 30%;
+    }
+
+    .business__logo {
+      width: 26%;
+
+      @include breakpoint(sm) {
+        width: 40%;
+      }
+
+      @include breakpoint(md) {
+        width: 35%;
+      }
+
+      @include breakpoint(lg) {
+        width: 26%;
+      }
+
+      @include breakpoint(xl) {
+        width: 30%;
+      }
+    }
+
+    .business__data {
+      color: $color1;
+      text-shadow: 3px 0 3px $color2;
+      width: 70%;
+
+      @include breakpoint(sm) {
+        width: 60%;
+      }
+
+      @include breakpoint(lg) {
+        width: 60%;
+      }
+
+      h1,
+      p {
+        font-size: clamp(rem(16), rem(16) + 2vw, rem(18) /*18px*/);
+
+        @include breakpoint(sm) {
+          font-size: clamp(rem(16), rem(16) + 2vw, rem(20) /*20px*/);
+        }
+
+        @include breakpoint(md) {
+          font-size: clamp(rem(16), rem(16) + 2vw, rem(18) /*18px*/);
+          line-height: 1.2;
+        }
+
+        @include breakpoint(lg) {
+          font-size: clamp(rem(16), rem(16) + 2vw, rem(16) /*16px*/);
+        }
+
+        @include breakpoint(xl) {
+          font-size: clamp(rem(16), rem(16) + 2vw, rem(21) /*22px*/);
+        }
+
+        @include breakpoint(xxl) {
+          font-size: clamp(rem(16), rem(16) + 2vw, rem(22) /*22px*/);
+        }
+      }
+
+      h1 {
+        line-height: 1.1;
+      }
+    }
+  }
+}
+
+.navbar-toggler {
+  border: 2px solid $color1;
+  padding: 0.8rem;
+
+  &:focus {
+    box-shadow: 0 0 0 $color1;
+  }
+
+  .navbar-toggler-icon {
+    height: 4px;
+    background-color: $color1;
+    background-image: none;
+    width: 25px;
+
+    &::before {
+      height: 4px;
+      background-color: $color1;
+      content: '';
+      left: 0;
+      position: absolute;
+      top: -8px;
+      width: 25px;
+    }
+
+    &::after {
+      height: 4px;
+      background-color: $color1;
+      content: '';
+      left: 0;
+      position: absolute;
+      top: 8px;
+      width: 25px;
+    }
+  }
+}
+
+.navbar-nav {
+  @include breakpoint(lg) {
+    width: 100%;
+  }
+
+  @include breakpoint(xl) {
+    width: 95%;
+  }
+
+  @include breakpoint(xxl) {
+    width: 90%;
+  }
+}
+
+.nav-link {
+  color: $color1;
+  font-family: $font1;
+  text-shadow: 3px 0 3px $color2;
+
+  @include breakpoint(sm) {
+    font-size: clamp(rem(16), rem(16) + 2vw, rem(18) /*18px*/);
+  }
+
+  @include breakpoint(lg) {
+    font-size: clamp(rem(16), rem(16) + 2vw, rem(18) /*20px*/);
+  }
+
+  @include breakpoint(xl) {
+    font-size: clamp(rem(16), rem(16) + 2vw, rem(23) /*22px*/);
+  }
+
+  &:focus,
+  &:hover {
+    color: $color3;
+  }
+}
+
+.container-md {
+  @include breakpoint(xxl) {
+    max-width: 1500px;
+  }
+}

@@ -1,0 +1,113 @@
+@use '../abstracts/' as *;
+
+.main {
+  background-color: rgba(0, 0, 0, 0.5);
+  min-height: 100vh;
+  position: relative;
+
+  @include breakpoint(lg) {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  &::before {
+    background: url(../assets/img/alitas-de-pollo-al-ajo.webp) no-repeat center
+      center/cover;
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: -999999;
+    width: 100%;
+  }
+}
+
+.intro {
+  color: $color1;
+  padding: 1rem;
+  text-shadow: 3px 0 3px $color2;
+
+  @include breakpoint(lg) {
+    margin-left: 4% !important;
+    padding: 0;
+    width: 40%;
+  }
+
+  @include breakpoint(xl) {
+    margin-left: 6% !important;
+  }
+
+  @include breakpoint(xxl) {
+    margin-left: 10% !important;
+    width: 35%;
+  }
+
+  h2 {
+    font-size: clamp(rem(16), rem(30) + 2vw, rem(35) /*35px*/);
+
+    // @include breakpoint(sm) {
+    //   font-size: clamp(rem(16), rem(24) + 2vw, rem(35) );
+    // }
+
+    @include breakpoint(md) {
+      font-size: clamp(rem(16), rem(40) + 2vw, rem(50) /*48px*/);
+    }
+
+    @include breakpoint(lg) {
+      font-size: clamp(rem(16), rem(24) + 2vw, rem(40) /*40px*/);
+    }
+
+    @include breakpoint(xl) {
+      font-size: clamp(rem(16), rem(32) + 2vw, rem(50) /*50px*/);
+    }
+
+    @include breakpoint(xxl) {
+      font-size: clamp(rem(16), rem(48) + 2vw, rem(70) /*70px*/);
+    }
+  }
+
+  p {
+    font-size: clamp(rem(16), rem(16) + 2vw, rem(20) /*20px*/);
+
+    @include breakpoint(sm) {
+      font-size: clamp(rem(16), rem(16) + 2vw, rem(22) /*22px*/);
+    }
+
+    @include breakpoint(md) {
+      font-size: clamp(rem(16), rem(16) + 2vw, rem(24) /*24px*/);
+    }
+
+    @include breakpoint(xl) {
+      font-size: clamp(rem(16), rem(16) + 2vw, rem(23) /*23px*/);
+    }
+
+    @include breakpoint(xxl) {
+      font-size: clamp(rem(16), rem(16) + 2vw, rem(30) /*30px*/);
+      margin-bottom: rem(16);
+    }
+  }
+
+  a {
+    border: 3px solid $color2;
+    font-family: $font1;
+    font-size: clamp(rem(16), rem(16) + 2vw, rem(17) /*17px*/);
+    padding: rem(16);
+    text-shadow: 1px 0 3px $color1;
+
+    @include breakpoint(xl) {
+      margin-inline: auto;
+      width: 60%;
+    }
+
+    @include breakpoint(xxl) {
+      font-size: clamp(rem(16), rem(16) + 2vw, rem(22) /*22px*/);
+    }
+
+    &:hover {
+      border: 3px solid $color1;
+      background-color: $color4;
+      color: $color1;
+      text-shadow: 3px 0 3px $color2;
+    }
+  }
+}

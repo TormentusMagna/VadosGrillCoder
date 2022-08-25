@@ -1,0 +1,25 @@
+@use '../abstracts/' as *;
+
+footer {
+  background-color: $color2;
+  color: $color1;
+  height: 60px;
+
+  div {
+    height: 100%;
+  }
+
+  p {
+    @include breakpoint(sm) {
+      font-size: clamp(rem(16), rem(16) + 2vw, rem(18) /*18px*/);
+    }
+
+    @include breakpoint(lg) {
+      font-size: clamp(rem(16), rem(16) + 2vw, rem(20) /*20px*/);
+    }
+
+    @include breakpoint(xl) {
+      font-size: clamp(rem(16), rem(16) + 2vw, rem(22) /*22px*/);
+    }
+  }
+}
