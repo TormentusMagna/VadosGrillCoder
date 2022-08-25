@@ -1,12 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta name="description" content="Conóce el menú de especialidades de Vados Grill Querétaro"> 
+  <meta name="keywords" content="wings, alitas, alitas de pollo, alitas lemon pepper, alitas mango habanero, alitas tamarindo tajin">
+  <link rel="shortcut icon" href="../assets/img/icono-vados-grill.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" media="screen">
+  <link rel="stylesheet" href="../dist/styles.css" media="screen">
+  <title>Vados Grill | Menú de especialidades </title>
 </head>
 <body>
-  Especiales
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark position-fixed">
+      <div class="container-fluid container-md menu-desktop">
+        <a class="navbar-brand d-flex align-items-center me-0" href="../index.html">
+          <div class="business__logo d-flex align-items-center justify-content-center">
+            <img class="img-fluid" src="../assets/img/logotipo-vados-grill.webp" alt="Logotipo de Vados Grill" width="200" height="200">
+          </div>
+          <div class="business__data ms-2 d-flex flex-column justify-content-center ms-md-1">
+            <h1 class="text-uppercase mb-0">Vados Grill</h1>
+            <p class="fw-bold mb-0">Alitas al carbón</p>
+          </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon position-relative"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-xl-end" id="navbarNav">
+          <ul class="navbar-nav d-lg-flex justify-content-lg-evenly justify-content-xl-around ">
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="/pages/especiales.html">Especiales</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="/pages/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="/pages/menu.html">Menú</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="/pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main--especiales d-flex align-items-center">
+    <section class="contenido__especiales container col-sm-10 col-md-12">
+      <div class="contenido__especiales__cabezal container pb-lg-3">
+        <h2 class="text-uppercase text-center">¡Pídelas y a disfrutar!</h2>
+        <p class="text-center fw-bold">Nuestra selección especial está hecha para ti</p>
+      </div>
+
+      <div class="contenido__especiales__cards container d-md-flex flex-md-wrap justify-content-md-between justify-content-lg-evenly">
+        <div class="card mb-5 contenido__especiales__cards__single mb-lg-0">
+          <img src="../assets/img/alitas-lemon-pepper.webp" class="card-img-top img-fluid" alt="Alitas lemon pepper" width="400" height="400">
+          <div class="card-body">
+            <h5 class="card-title text-center text-uppercase">Alitas Lemon Pepper</h5>
+            <p class="card-text text-center fw-bold">Deliciosas alitas bañadas en salsa especial sabor limón pimienta con un toque de ajo asado.</p>
+            <a href="#" class="btn btn-warning d-block fw-bold text-uppercase">Ordenar</a>
+          </div>
+        </div>
+
+        <div class="card mb-5 contenido__especiales__cards__single mb-lg-0">
+          <img loading="lazy" src="../assets/img/alitas-mango-habanero.webp" class="card-img-top img-fluid" alt="Alitas Mango Habanero" width="400" height="400">
+          <div class="card-body">
+            <h5 class="card-title text-center text-uppercase">Alitas Mango Habanero</h5>
+            <p class="card-text text-center fw-bold">Selección especial de especias fusionadas en una exquisita salsa tropical que deleita tu paladar.</p>
+            <a href="#" class="btn btn-warning d-block fw-bold text-uppercase">Ordenar</a>
+          </div>
+        </div>
+
+        <div class="card contenido__especiales__cards__single">
+          <img loading="lazy" src="../assets/img/alitas-tamarindo.webp" class="card-img-top img-fluid" alt="Alitas Tamarindo" width="400" height="400">
+          <div class="card-body">
+            <h5 class="card-title text-center text-uppercase">Alitas Tamarindo Tajin</h5>
+            <p class="card-text text-center fw-bold">Salsa preparada con jugo maggy y la receta secreta de la casa para brindarte un sabor único.</p>
+            <a href="#" class="btn btn-warning d-block fw-bold text-uppercase">Ordenar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <div class="container d-flex align-items-center justify-content-center">
+      <p class="mb-0 text-center">&copy; 2022 Todos los derechos reservados Vados Grill, México</p>
+    </div>
+  </footer> 
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" defer></script>
 </body>
 </html>
