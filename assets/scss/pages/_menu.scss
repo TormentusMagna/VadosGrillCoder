@@ -1,0 +1,155 @@
+@use '../abstracts/' as *;
+
+.main--menu {
+  background-color: rgba(0, 0, 0, 0.5);
+  min-height: 100vh;
+  position: relative;
+
+  @include breakpoint(lg) {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  &::before {
+    background: url(../assets/img/alitas-pollo-frito-sobre-tabla-negra.webp)
+      no-repeat center center/cover;
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: -999999;
+    width: 100%;
+  }
+}
+
+.menu__cabezal {
+  margin-inline: auto;
+  padding-top: 7rem;
+  width: 90%;
+
+  @include breakpoint(sm) {
+    width: 75%;
+  }
+
+  @include breakpoint(md) {
+    width: 70%;
+  }
+
+  @include breakpoint(lg) {
+    width: 55%;
+  }
+
+  @include breakpoint(xl) {
+    padding-top: 8rem;
+    width: 45%;
+  }
+
+  @include breakpoint(xxl) {
+    padding-top: 10rem;
+    width: 35%;
+  }
+
+  h2 {
+    color: white;
+    margin-bottom: 1.5rem;
+    text-shadow: 3px 0 3px $color2;
+
+    @include breakpoint(sm) {
+      font-size: clamp(1rem, 1.5rem + 2vw, 2rem /*32px*/);
+      margin-bottom: 3rem;
+    }
+
+    @include breakpoint(md) {
+      font-size: clamp(1rem, 2rem + 2vw, 2.1875rem /*35px*/);
+    }
+
+    @include breakpoint(xl) {
+      font-size: clamp(1rem, 2rem + 2vw, 2.625rem /*40px*/);
+    }
+
+    @include breakpoint(xxl) {
+      font-size: clamp(1rem, 2rem + 2vw, 45px /*45px*/);
+    }
+  }
+}
+
+.menu__cards {
+  margin-inline: auto;
+  width: 90%;
+
+  @include breakpoint(sm) {
+    width: 65%;
+  }
+
+  @include breakpoint(md) {
+    width: 95%;
+  }
+
+  @include breakpoint(xl) {
+    width: 90%;
+  }
+
+  @include breakpoint(xxl) {
+    width: 75%;
+  }
+
+  &__single {
+    border: 2px dashed $color2;
+    box-shadow: 5px 0 10px $color2;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    width: 90%;
+
+    @include breakpoint(md) {
+      margin-inline: 0;
+      margin-bottom: 4rem;
+      width: 43%;
+    }
+
+    @include breakpoint(lg) {
+      width: 30%;
+    }
+
+    @include breakpoint(xl) {
+      width: 29%;
+    }
+
+    @include breakpoint(xxl) {
+      width: 27%;
+    }
+
+    img {
+      transition: all ease 0.3s;
+      border-bottom: 2px dashed $color2;
+
+      &:hover {
+        transform: scale(103%);
+        transition: all ease 0.3s;
+      }
+    }
+
+    .card-body {
+      padding: 1rem;
+    }
+
+    h5 {
+      font-size: clamp(1rem, 1rem + 2vw, 1.5625rem /*25px*/);
+      margin-top: 1rem;
+    }
+
+    p {
+      font-size: clamp(1rem, 1rem + 2vw, 1.25rem /*20px*/);
+
+      @include breakpoint(xxl) {
+        font-size: clamp(1rem, 1rem + 2vw, 1.4375rem /*23px*/);
+      }
+    }
+
+    a {
+      font-family: $font1;
+      margin-bottom: 1rem;
+      padding: 15px 0;
+    }
+  }
+}

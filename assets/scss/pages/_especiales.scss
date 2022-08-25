@@ -68,7 +68,10 @@
 
   &__cards {
     &__single {
+      border: 2px dashed $color2;
+      box-shadow: 5px 0 10px $color2;
       margin-inline: auto;
+      overflow: hidden;
       width: 90%;
 
       @include breakpoint(sm) {
@@ -92,9 +95,24 @@
         width: 27%;
       }
 
-      h5,
-      a {
+      img {
+        transition: all ease 0.3s;
+        border-bottom: 2px dashed $color2;
+
+        &:hover {
+          transform: scale(103%);
+          transition: all ease 0.3s;
+        }
+      }
+
+      .card-body {
+        padding: 1rem;
+      }
+
+      h5 {
         font-family: $font1;
+        margin-top: 1rem;
+
         @include breakpoint(sm) {
           font-size: clamp(1rem, 1rem + 2vw, 1.375rem /*22px*/);
         }
@@ -116,6 +134,12 @@
         @include breakpoint(xxl) {
           font-size: clamp(rem(16), rem(16) + 2vw, rem(25) /*25px*/);
         }
+      }
+
+      a {
+        font-family: $font1;
+        margin-bottom: 1rem;
+        padding: 15px 0;
       }
     }
   }
