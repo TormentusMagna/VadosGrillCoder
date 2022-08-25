@@ -39,6 +39,8 @@
 
   &__cabezal {
     color: $color1;
+    text-shadow: 3px 0 3px $color2;
+
     h2 {
       font-size: clamp(rem(16), rem(16) + 2vw, rem(25) /*25px*/);
 
