@@ -1,12 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta name="description" content="Vados Grill te escucha. Mira nuestra ubicación o ponte en contacto con nosotros">
+  <meta name="keywords" content="wings, alitas, alitas de pollo, alitas alcarbón, alitas bbq, alitas lemon pepper, alitas limón pimienta, alitas mango habanero, alitas tamarindo tajin, alitas manzana piña, alitas bbq con ajo, alitas menta yerbabuena">
+  <link rel="shortcut icon" href="../assets/img/icono-vados-grill.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" media="screen">
+  <link rel="stylesheet" href="../dist/styles.css" media="screen">
+  <title>Vados Grill | Contáctanos</title>
 </head>
 <body>
-  Contacto
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark position-fixed">
+      <div class="container-fluid container-md menu-desktop">
+        <a class="navbar-brand d-flex align-items-center me-0" href="../index.html">
+          <div class="business__logo d-flex align-items-center justify-content-center">
+            <img class="img-fluid" src="../assets/img/logotipo-vados-grill.webp" alt="Logotipo de Vados Grill" width="200" height="200">
+          </div>
+          <div class="business__data ms-2 d-flex flex-column justify-content-center ms-md-1">
+            <h1 class="text-uppercase mb-0">Vados Grill</h1>
+            <p class="fw-bold mb-0">Alitas al carbón</p>
+          </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon position-relative"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-xl-end" id="navbarNav">
+          <ul class="navbar-nav d-lg-flex justify-content-lg-evenly justify-content-xl-around ">
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="./especiales.html">Especiales</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="./nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="./menu.html">Menú</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main--contacto d-flex flex-column justify-content-center">
+    <section class="contacto__cabezal">
+      <h2 class="text-center text-uppercase">Visítanos o envíanos un mensaje</h2>
+    </section>
+
+    <section class="contacto__content d-lg-flex justify-content-lg-around">
+      <div class="contacto__content__map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.940049291617!2d-100.44836668454782!3d20.631300306602444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d3507dc2586f1b%3A0x30fae91fda6cd5da!2sC.%20Heliotropos%20%26%20Av%20Begonias%2C%20Insurgentes%2C%2076117%20Santiago%20de%20Quer%C3%A9taro%2C%20Qro.!5e0!3m2!1ses-419!2smx!4v1661468198350!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="contacto__content__formulario">
+        <form>
+          <div class="form-group">
+            <label for="nombre">Tu nombre: </label>
+            <input type="text" class="form-control" id="nombre" aria-describedby="textHelp" placeholder="Ingresa tu nombre" required>
+            <small id="textHelp" class="form-text text-muted">Tu información no será compartida con nadie.</small>
+          </div>
+          <div class="form-group">
+            <label for="email">Correo electrónico: </label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Ingresa tu email" required>
+            <small id="emailHelp" class="form-text text-muted">Tu información no será compartida con nadie.</small>
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje:</label>
+            <textarea class="form-control" name="mensaje" id="mensaje"  placeholder="Ingresa tu mensaje" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <div class="container d-flex align-items-center justify-content-center">
+      <p class="mb-0 text-center">&copy; 2022 Todos los derechos reservados Vados Grill, México</p>
+    </div>
+  </footer> 
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" defer></script>
 </body>
 </html>

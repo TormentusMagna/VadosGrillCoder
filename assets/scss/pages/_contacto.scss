@@ -1,0 +1,141 @@
+@use '../abstracts/' as *;
+
+.main--contacto {
+  background-color: rgba(0, 0, 0, 0.5);
+  min-height: 100vh;
+  position: relative;
+
+  @include breakpoint(lg) {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  &::before {
+    background: url(../assets/img/tabla-de-cocina-rodeada-de-especias.webp)
+      no-repeat center center/cover;
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: -999999;
+    width: 100%;
+  }
+}
+
+.contacto__cabezal {
+  margin-inline: auto;
+  padding-top: 7rem;
+  width: 90%;
+
+  @include breakpoint(lg) {
+    padding-top: 0;
+    width: 45%;
+  }
+
+  @include breakpoint(xl) {
+    padding-top: 7rem;
+    width: 35%;
+  }
+
+  @include breakpoint(xxl) {
+    padding-top: 0;
+    width: 50%;
+  }
+
+  h2 {
+    color: $color1;
+    font-size: clamp(rem(16), rem(16) + 2vw, rem(25));
+    margin-bottom: 2rem;
+
+    @include breakpoint(md) {
+      font-size: clamp(rem(16), rem(24) + 2vw, rem(30));
+    }
+
+    @include breakpoint(xxl) {
+      font-size: clamp(rem(16), rem(32) + 2vw, rem(40));
+    }
+  }
+}
+
+.contacto__content {
+  margin-inline: auto;
+  padding-bottom: 3rem;
+  width: 90%;
+
+  @include breakpoint(sm) {
+    width: 70%;
+  }
+
+  @include breakpoint(sm) {
+    width: 65%;
+  }
+
+  @include breakpoint(lg) {
+    height: 500px;
+    padding-bottom: 0;
+    width: 90%;
+  }
+
+  @include breakpoint(xl) {
+    height: 600px;
+    padding-bottom: 5rem;
+    width: 80%;
+  }
+
+  @include breakpoint(xxl) {
+    height: 500px;
+    padding-bottom: 0;
+    width: 65%;
+  }
+
+  &__map {
+    margin-bottom: 3rem;
+    box-shadow: 5px 0 10px $color2;
+
+    @include breakpoint(lg) {
+      margin-bottom: 0;
+      width: 45%;
+    }
+
+    iframe {
+      width: 100%;
+      object-fit: cover;
+
+      @include breakpoint(lg) {
+        height: 100%;
+      }
+    }
+  }
+
+  &__formulario {
+    background-color: rgba(255, 255, 255, 1);
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 0 10px black;
+    padding: 1rem;
+
+    @include breakpoint(lg) {
+      width: 45%;
+    }
+
+    label {
+      font-family: $font1;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 1rem 0;
+    }
+
+    small {
+      font-family: $font2;
+    }
+
+    button {
+      display: block;
+      font-family: $font1;
+      margin: 2rem auto;
+      padding: 1rem 0;
+      text-transform: uppercase;
+      width: 80%;
+    }
+  }
+}

@@ -797,6 +797,152 @@ p {
   padding: 15px 0;
 }
 
+.main--contacto {
+  background-color: rgba(0, 0, 0, 0.5);
+  min-height: 100vh;
+  position: relative;
+}
+@media (min-width: 62em) {
+  .main--contacto {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+.main--contacto::before {
+  background: url(../assets/img/tabla-de-cocina-rodeada-de-especias.webp) no-repeat center center/cover;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  z-index: -999999;
+  width: 100%;
+}
+
+.contacto__cabezal {
+  margin-inline: auto;
+  padding-top: 7rem;
+  width: 90%;
+}
+@media (min-width: 62em) {
+  .contacto__cabezal {
+    padding-top: 0;
+    width: 45%;
+  }
+}
+@media (min-width: 75em) {
+  .contacto__cabezal {
+    padding-top: 7rem;
+    width: 35%;
+  }
+}
+@media (min-width: 87.5em) {
+  .contacto__cabezal {
+    padding-top: 0;
+    width: 50%;
+  }
+}
+.contacto__cabezal h2 {
+  color: white;
+  font-size: clamp(1rem, 1rem + 2vw, 1.5625rem);
+  margin-bottom: 2rem;
+}
+@media (min-width: 48em) {
+  .contacto__cabezal h2 {
+    font-size: clamp(1rem, 1.5rem + 2vw, 1.875rem);
+  }
+}
+@media (min-width: 87.5em) {
+  .contacto__cabezal h2 {
+    font-size: clamp(1rem, 2rem + 2vw, 2.5rem);
+  }
+}
+
+.contacto__content {
+  margin-inline: auto;
+  padding-bottom: 3rem;
+  width: 90%;
+}
+@media (min-width: 36em) {
+  .contacto__content {
+    width: 70%;
+  }
+}
+@media (min-width: 36em) {
+  .contacto__content {
+    width: 65%;
+  }
+}
+@media (min-width: 62em) {
+  .contacto__content {
+    height: 500px;
+    padding-bottom: 0;
+    width: 90%;
+  }
+}
+@media (min-width: 75em) {
+  .contacto__content {
+    height: 600px;
+    padding-bottom: 5rem;
+    width: 80%;
+  }
+}
+@media (min-width: 87.5em) {
+  .contacto__content {
+    height: 500px;
+    padding-bottom: 0;
+    width: 65%;
+  }
+}
+.contacto__content__map {
+  margin-bottom: 3rem;
+  box-shadow: 5px 0 10px black;
+}
+@media (min-width: 62em) {
+  .contacto__content__map {
+    margin-bottom: 0;
+    width: 45%;
+  }
+}
+.contacto__content__map iframe {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (min-width: 62em) {
+  .contacto__content__map iframe {
+    height: 100%;
+  }
+}
+.contacto__content__formulario {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 0 10px black;
+  padding: 1rem;
+}
+@media (min-width: 62em) {
+  .contacto__content__formulario {
+    width: 45%;
+  }
+}
+.contacto__content__formulario label {
+  font-family: "Alfa Slab One", cursive;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+.contacto__content__formulario small {
+  font-family: "Courgette", cursive;
+}
+.contacto__content__formulario button {
+  display: block;
+  font-family: "Alfa Slab One", cursive;
+  margin: 2rem auto;
+  padding: 1rem 0;
+  text-transform: uppercase;
+  width: 80%;
+}
+
 footer {
   background-color: black;
   color: white;
