@@ -1,0 +1,4 @@
+Sitemap: https://tormentusmagna.github.io/VadosGrillCoder/sitemap.xml
+
+User-agent:  *
+Disallow: /assets/scss
