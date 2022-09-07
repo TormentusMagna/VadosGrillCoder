@@ -263,12 +263,12 @@ p {
 @media (min-width: 75em) {
   .intro {
     margin-left: 6% !important;
+    margin-top: 7rem;
   }
 }
 @media (min-width: 87.5em) {
   .intro {
     margin-left: 10% !important;
-    margin-top: 7rem;
     width: 35%;
   }
 }
@@ -528,7 +528,7 @@ p {
 @media (min-width: 75em) {
   .nosotros__content {
     height: 500px;
-    padding-top: 3rem;
+    padding-top: 7rem;
   }
 }
 @media (min-width: 87.5em) {
@@ -611,7 +611,7 @@ p {
 }
 @media (min-width: 62em) {
   .nosotros__content__aboutus p {
-    font-size: clamp(1rem, 1rem + 2vw, 1.1875rem);
+    font-size: clamp(1rem, 1rem + 2vw, 1.125rem);
   }
 }
 

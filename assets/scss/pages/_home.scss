@@ -35,11 +35,11 @@
 
   @include breakpoint(xl) {
     margin-left: 6% !important;
+    margin-top: 7rem;
   }
 
   @include breakpoint(xxl) {
     margin-left: 10% !important;
-    margin-top: 7rem;
     width: 35%;
   }
 
