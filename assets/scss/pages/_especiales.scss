@@ -33,10 +33,6 @@
     padding: 8rem 0;
   }
 
-  @include breakpoint(xxl) {
-    padding: 0;
-  }
-
   &__cabezal {
     color: $color1;
     text-shadow: 3px 0 3px $color2;

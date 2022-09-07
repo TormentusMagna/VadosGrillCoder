@@ -38,7 +38,6 @@
   }
 
   @include breakpoint(xxl) {
-    padding-top: 0;
     width: 50%;
   }
 
@@ -52,7 +51,7 @@
     }
 
     @include breakpoint(xxl) {
-      font-size: clamp(rem(16), rem(32) + 2vw, rem(40));
+      font-size: clamp(rem(16), rem(32) + 2vw, rem(38));
     }
   }
 }

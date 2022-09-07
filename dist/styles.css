@@ -268,6 +268,7 @@ p {
 @media (min-width: 87.5em) {
   .intro {
     margin-left: 10% !important;
+    margin-top: 7rem;
     width: 35%;
   }
 }
@@ -375,11 +376,6 @@ p {
 @media (min-width: 75em) {
   .contenido__especiales {
     padding: 8rem 0;
-  }
-}
-@media (min-width: 87.5em) {
-  .contenido__especiales {
-    padding: 0;
   }
 }
 .contenido__especiales__cabezal {
@@ -600,16 +596,6 @@ p {
     font-size: clamp(1rem, 1.5rem + 2vw, 1.875rem);
   }
 }
-@media (min-width: 75em) {
-  .nosotros__content__aboutus h2 {
-    font-size: clamp(1rem, 2rem + 2vw, 2.1875rem);
-  }
-}
-@media (min-width: 87.5em) {
-  .nosotros__content__aboutus h2 {
-    font-size: clamp(1rem, 2.5rem + 2vw, 2.5rem);
-  }
-}
 .nosotros__content__aboutus p {
   font-size: clamp(1rem, 1rem + 2vw, 1.25rem);
 }
@@ -621,16 +607,6 @@ p {
 @media (min-width: 62em) {
   .nosotros__content__aboutus p {
     font-size: clamp(1rem, 1rem + 2vw, 1.25rem);
-  }
-}
-@media (min-width: 75em) {
-  .nosotros__content__aboutus p {
-    font-size: clamp(1rem, 1rem + 2vw, 1.375rem);
-  }
-}
-@media (min-width: 87.5em) {
-  .nosotros__content__aboutus p {
-    font-size: clamp(1rem, 1rem + 2vw, 1.5rem);
   }
 }
 
@@ -837,7 +813,6 @@ p {
 }
 @media (min-width: 87.5em) {
   .contacto__cabezal {
-    padding-top: 0;
     width: 50%;
   }
 }
@@ -853,7 +828,7 @@ p {
 }
 @media (min-width: 87.5em) {
   .contacto__cabezal h2 {
-    font-size: clamp(1rem, 2rem + 2vw, 2.5rem);
+    font-size: clamp(1rem, 2rem + 2vw, 2.375rem);
   }
 }
 
