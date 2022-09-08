@@ -46,10 +46,6 @@
   h2 {
     font-size: clamp(rem(16), rem(30) + 2vw, rem(35) /*35px*/);
 
-    // @include breakpoint(sm) {
-    //   font-size: clamp(rem(16), rem(24) + 2vw, rem(35) );
-    // }
-
     @include breakpoint(md) {
       font-size: clamp(rem(16), rem(40) + 2vw, rem(50) /*48px*/);
     }
